@@ -7,7 +7,7 @@ A = [
 ];
 b = [ 1, 2, 4, 5, 3 ]';
 
-[P, L, U] = gauss_z_wyborem_czesciowym(A);
+[P, L, U] = gauss(A);
 y = podstawienie_zstepujace(L, b, P);
 x = podstawienie_wstepujace(U, y);
 
